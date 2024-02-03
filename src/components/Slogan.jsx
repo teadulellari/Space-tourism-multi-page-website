@@ -1,9 +1,11 @@
 import NavBar from "./NavBar";
 const Slogan = () => {
     return (
-      <div>
-       <NavBar />
-        <div className="container">
+      <div className="main-container">
+      <NavBar />
+      <div className="container">
+        
+        <div className="container-1">
         <h2>So, you want to travel to</h2>
         <h1>SPACE</h1>
         <p>
@@ -13,9 +15,10 @@ const Slogan = () => {
           experience!
         </p>
         </div>
-        <div>
-        <button>Explore</button>
+        <div className="container-2">
+        <button className="circle-button">Explore</button>
         </div>
+      </div>
       </div>
     );
   };
