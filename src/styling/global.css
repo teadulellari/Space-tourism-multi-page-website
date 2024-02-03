@@ -1,7 +1,7 @@
 
 :root {
     --primary-blue: #0B0D17;
-    --primary-purple: #0B0D17;
+    --primary-purple: #D0D6F9;
     --primary-white: #FFFFFF;
     --font-xl: 150px;
     --font-l: 100px;
@@ -19,12 +19,43 @@
   }
   body{
     height: 100%;
+    width: 100%;
     background-image: url("../assets/home/background-home-mobile.jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     text-align: center;
+  }
+  h1, h2 {
+    margin: 0;
+  }
+  .container {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+  }
+  .container h1 {
+    font-family: 'Bellefair', serif;
+    color: var(--primary-white);
+    font-size: 80px;
 
   }
- 
+
+  .container h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+    color: var(--primary-purple);
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+ .container p {
+    font-family: 'Bellefair', serif;
+    color: var(--primary-purple);
+    font-size: 15px;
+
+
+ }
   
