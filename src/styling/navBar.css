@@ -1,0 +1,112 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    line-height: 30px;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  ul {
+    list-style: none;
+    display: none;
+   
+  }
+  
+  li {
+    color: var(--primary-white);
+    margin-bottom: 10px;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    cursor: pointer;
+    color: white;
+    width: 24px;
+    height: 21px;
+  }
+  
+  .close-icon {
+    display: none;
+  }
+  
+  /* Backdrop styles */
+  .backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hamburger-icon {
+      display: none;
+    }
+  
+    ul {
+      display: flex;
+    }
+  }
+  
+  /* Hamburger menu styles */
+  .nav-list {
+    list-style: none;
+    display: none;
+  }
+  
+  .open {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    width: 70%;
+    top: 90px;
+    left: 20px;
+    padding: 20px;
+    z-index: 999;
+  }
+  .open .nav-list li::before {
+    font-weight: bold;
+  }
+  .hamburger-icon.hide,
+  .close-icon.hide {
+    display: none;
+  }
+  
+  /* Show backdrop when menu is open */
+  nav.show .backdrop {
+    display: block;
+  }
+  
+  /* Show hamburger icon by default, hide close icon */
+  .hamburger-icon {
+    display: block;
+  }
+  
+  /* Show close icon when menu is open, hide hamburger icon */
+  nav.show .hamburger-icon {
+    display: none;
+  }
+  
+  nav.show .close-icon {
+    padding: 30px;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  
+  nav.show .backdrop {
+    display: block;
+  }
+  
