@@ -22,7 +22,7 @@ nav {
   
   li {
     color: var(--primary-white);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .hamburger-icon,
@@ -76,9 +76,7 @@ nav {
     padding: 20px;
     z-index: 999;
   }
-  .open .nav-list li::before {
-    font-weight: bold;
-  }
+  
   .hamburger-icon.hide,
   .close-icon.hide {
     display: none;
@@ -109,4 +107,12 @@ nav {
   nav.show .backdrop {
     display: block;
   }
-  
+  nav.show .bold-number  {
+   font-weight: bold;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: var(--primary-white);
+
+  }
+ 

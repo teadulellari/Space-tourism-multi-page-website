@@ -1,8 +1,8 @@
 import NavBar from "./NavBar";
-const Slogan = () => {
+const Home = () => {
     return (
       <div className="main-container">
-      <NavBar />
+     
       <div className="container">
         
         <div className="container-1">
@@ -23,4 +23,4 @@ const Slogan = () => {
     );
   };
   
-  export default Slogan;
+  export default Home;

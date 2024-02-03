@@ -13,32 +13,28 @@ const Navbar = () => {
 
   return (
     <>
-       <nav className={isOpen ? 'show' : ''}>
-
+      <nav className={isOpen ? 'show' : ''}>
         <img className="logo" src={Logo} alt="logo" />
         <img
-            className={`hamburger-icon ${isOpen ? 'hide' : ''}`}
-            src={HamburgerIcon}
-            alt="hamburger icon"
-            onClick={toggleMenu}
-          />
-          <div className='backdrop'>
+          className={`hamburger-icon ${isOpen ? 'hide' : ''}`}
+          src={HamburgerIcon}
+          alt="hamburger icon"
+          onClick={toggleMenu}
+        />
+        <div className='backdrop'>
           <img
             className={` backdrop close-icon ${isOpen ? '' : 'hide'}`}
             src={CloseIcon}
             alt="close icon"
             onClick={toggleMenu}
           />
-           <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
-           <li><span className="bold-number">00</span> HOME</li>
-            <li>01 DESTINATION</li>
-            <li>02 CREW</li>
-            <li>03 TECHNOLOGY</li>
-           </ul>
-          </div>
-        
-          
-        
+          <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
+            <li><a href="/" className="nav-link"><span className="bold-number">00</span> HOME</a></li>
+            <li><a href="/destinations" className="nav-link"><span className="bold-number">01</span> DESTINATION</a></li>
+            <li><a href="/crew" className="nav-link"><span className="bold-number">02</span> CREW</a></li>
+            <li><a href="/technology" className="nav-link"><span className="bold-number">03</span> TECHNOLOGY</a></li>
+          </ul>
+        </div>
       </nav>
     </>
   );

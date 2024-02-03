@@ -1,14 +1,24 @@
-import { useState } from 'react'
-import Slogan from "./Slogan"
-import "../styling/global.css"
+import React from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './Home';
+import Destinations from './Destinations';
+import Destination from './Destination';
+import Navbar from './NavBar';
 
-function App() {
+import data from '../data/data.json';
 
+const App = () => {
+  const destinations = data.destinations;
   return (
-    
-   <Slogan />
-   
-  )
-}
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/destinations/*" element={<Destinations destinations={destinations} />} />
+        <Route path="/destinations/:destination" element={<Destination />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
