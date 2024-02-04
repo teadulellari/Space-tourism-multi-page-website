@@ -23,7 +23,7 @@ const Destinations = ({ destinations }) => {
   const { name, images, description, distance, travel } = selectedDestination;
 
   return (
-    <div className="container">
+    <div className="dest-container">
       <div className="title">
         <span>
           <span className="bold-number">01 </span>Pick your destination

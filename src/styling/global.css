@@ -2,6 +2,7 @@
   --primary-blue: #0B0D17;
   --primary-purple: #D0D6F9;
   --primary-white: #FFFFFF;
+  --secondary-gray: #979797;
   --font-xl: 150px;
   --font-l: 100px;
   --font-m: 56px;
@@ -30,6 +31,15 @@ h1 {
   font-weight: normal;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+h3{
+  font-family:'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color:var(--primary-purple) ;
+  font-weight: normal;
+  text-transform: uppercase;
+  
 }
 p {
   font-family: 'Barlow', sans-serif;

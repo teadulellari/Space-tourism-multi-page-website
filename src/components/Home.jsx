@@ -3,9 +3,9 @@ import "../styling/global.css";
 import "../styling/home.css"
 const Home = () => {
     return (
-      <div className="main-container">
+      <div className="home-main-container">
      
-      <div className="container">
+      <div className="home-container">
         
         <div className="container-1">
         <h2>So, you want to travel to</h2>

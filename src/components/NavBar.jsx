@@ -32,7 +32,7 @@ const Navbar = () => {
             <li><a href="/" className="nav-link"><span className="bold-number">00</span> HOME</a></li>
             <li><a href="/destinations" className="nav-link"><span className="bold-number">01</span> DESTINATION</a></li>
             <li><a href="/crew" className="nav-link"><span className="bold-number">02</span> CREW</a></li>
-            <li><a href="/technology" className="nav-link"><span className="bold-number">03</span> TECHNOLOGY</a></li>
+            <li><a href="/tech" className="nav-link"><span className="bold-number">03</span> TECHNOLOGY</a></li>
           </ul>
         </div>
       </nav>
