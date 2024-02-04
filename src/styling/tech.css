@@ -6,6 +6,7 @@
     padding: 0;
     align-items: center;
     justify-content: center;
+
   }
   
   .tech-container h1 {
@@ -27,7 +28,7 @@
   
   .tech-container li {
     text-align: center;
-    margin: 15px;
+    margin: 10px;
   }
   
   .tech-container .circle-number {
@@ -40,7 +41,6 @@
     color: var(--primary-white);
     font-size: 18px;
     line-height: 40px;
-    margin: 0 5px;
     text-align: center;
     text-decoration: none; 
 

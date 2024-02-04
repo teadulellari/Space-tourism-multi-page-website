@@ -8,9 +8,10 @@
   --font-m: 56px;
   --font-s: 32px;
   --font-xs: 28px;
+  --bg-img: url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
 }
 
-html, body, #root{
+html, body, #root {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -19,9 +20,10 @@ html, body, #root{
 body {
   width: 100%;
   min-height: 100vh;
-  background: url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+  background: var(--bodyImg, var(--bg-img));
   text-align: center;
 }
+
 h1 {
   font-family: 'Bellefair', serif;
   color: var(--primary-white);
@@ -32,15 +34,16 @@ h1 {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
-h3{
-  font-family:'Barlow Condensed', sans-serif;
+
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
   letter-spacing: 2.36px;
-  color:var(--primary-purple) ;
+  color: var(--primary-purple);
   font-weight: normal;
   text-transform: uppercase;
-  
 }
+
 p {
   font-family: 'Barlow', sans-serif;
   color: var(--primary-purple);

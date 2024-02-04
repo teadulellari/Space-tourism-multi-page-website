@@ -3,10 +3,10 @@
     --primary-color: #FFFFFF;
     --primary-purple: #D0D6F9;
 }
-body{
-    background: url("../assets/destination/background-destination-mobile.jpg") center/cover no-repeat;
-}
+
+
 .dest-container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     color: white;
@@ -25,6 +25,7 @@ body{
 }
 .bold-number {
     color: var(--secondary-color);
+    font-weight: bold;
 }
  ul {
     display: flex;

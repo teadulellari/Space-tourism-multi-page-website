@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams, NavLink } from "react-router-dom";
 import "../styling/destination.css";
 import "../styling/global.css";
+import bg from "../assets/destination/background-destination-mobile.jpg"
 
 const Destinations = ({ destinations }) => {
   const { destination } = useParams();
+
 
   // Check if destinations is available
   if (!destinations) {
@@ -22,7 +24,15 @@ const Destinations = ({ destinations }) => {
 
   const { name, images, description, distance, travel } = selectedDestination;
 
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--bodyImg',
+      `url("${bg}") center/cover no-repeat`
+    );
+  }, [images.bg]);
+
   return (
+    <div className="dest-wrapper">
     <div className="dest-container">
       <div className="title">
         <span>
@@ -59,6 +69,7 @@ const Destinations = ({ destinations }) => {
         <h3>EST Travel Time</h3>
         <h2>{travel}</h2>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { NavLink, useParams } from "react-router-dom";
 import "../styling/global.css";
 import "../styling/tech.css";
+import bg from "../assets/technology/background-technology-mobile.jpg";
+import bgDesktop from "../assets/technology/background-technology-desktop.jpg";
+import bgTablet from "../assets/technology/background-technology-tablet.jpg";
+
+
 
 const Tech = ({ tech }) => {
     const { technology } = useParams();
@@ -17,6 +22,13 @@ const Tech = ({ tech }) => {
     }
 
     const { name, images, description } = selectedTech;
+
+    useEffect(() => {
+        document.documentElement.style.setProperty(
+          '--bodyImg',
+          `url("${bg}") center/cover no-repeat`
+        );
+      }, [images.bg]);
 
   return (
     <div className="tech-container">
