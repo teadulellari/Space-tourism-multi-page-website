@@ -1,4 +1,6 @@
 import NavBar from "./NavBar";
+import "../styling/global.css";
+import "../styling/home.css"
 const Home = () => {
     return (
       <div className="main-container">

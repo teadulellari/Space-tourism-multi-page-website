@@ -1,6 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useParams, NavLink } from "react-router-dom";
 import "../styling/destination.css";
+import "../styling/global.css";
 
 const Destinations = ({ destinations }) => {
   const { destination } = useParams();
@@ -10,26 +11,38 @@ const Destinations = ({ destinations }) => {
     return <div>Destinations data not found</div>;
   }
 
-  const selectedDestination = destinations.find(dest => dest.name.toLowerCase() === destination);
+  // Set default destination to "Moon" if no destination is provided
+  const selectedDestination = destination
+    ? destinations.find((dest) => dest.name.toLowerCase() === destination)
+    : destinations.find((dest) => dest.name.toLowerCase() === "moon");
 
   if (!selectedDestination) {
     return <div>Destination not found</div>;
   }
 
   const { name, images, description, distance, travel } = selectedDestination;
+
   return (
-    <div>
+    <div className="container">
       <div className="title">
-        <span><span className="bold-number-destinations">01</span>Pick your destination</span>
+        <span>
+          <span className="bold-number">01 </span>Pick your destination
+        </span>
       </div>
-      <div>
+      <div className="moon-image">
         <img src={images.png} alt={name} />
       </div>
       <div>
         <ul>
-          {/* Map through destinations and create list items */}
-          {destinations.map(dest => (
-            <li key={dest.name}>{dest.name}</li>
+          {destinations.map((dest) => (
+            <li key={dest.name}>
+              <NavLink
+                to={`/destinations/${dest.name.toLowerCase()}`}
+                activeclassnamee="active-link"
+              >
+                {dest.name}
+              </NavLink>
+            </li>
           ))}
         </ul>
       </div>
@@ -39,7 +52,7 @@ const Destinations = ({ destinations }) => {
       </div>
       <hr />
       <div>
-        <h3>Average Distance</h3>
+        <h3>Avg. Distance</h3>
         <h2>{distance}</h2>
       </div>
       <div>
