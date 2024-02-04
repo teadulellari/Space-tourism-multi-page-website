@@ -1,0 +1,17 @@
+.dot, .empty-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.dot {
+  background-color: white;
+   
+}
+  
+  
+  .empty-dot {
+    background-color: #979797;
+    
+  }

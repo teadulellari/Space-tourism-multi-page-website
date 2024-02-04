@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams, NavLink } from "react-router-dom";
 import "../styling/destination.css";
 import "../styling/global.css";
