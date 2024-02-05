@@ -40,7 +40,7 @@ const Destinations = ({ destinations }) => {
         </span>
       </div>
       <div className="moon-image">
-        <img src={images.png} alt={name} />
+        <img width={"170px"} height={"170px"} src={new URL(images.png, import.meta.url).href} alt={name} />
       </div>
       <div>
         <ul>

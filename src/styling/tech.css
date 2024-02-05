@@ -1,73 +1,68 @@
 .tech-container {
-    color: var(--primary-white);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
+  color: var(--primary-white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
-  
-  .tech-container h1 {
-    font-size: 24px;
-    font-weight: normal;
-    margin: 0;
-    line-height: normal;
-    margin-top: 10px;
-  }
-  
-  .tech-container h3 {
-    margin: 0;
-  }
-  
-  .tech-container ul {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .tech-container li {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .tech-container .circle-number {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--secondary-gray);
-    background-color: transparent;
-    color: var(--primary-white);
-    font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-    text-decoration: none; 
+.tech-container h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  line-height: normal;
+  margin-top: 10px;
+}
 
-  }
-  
-  .tech-container .circle-number.active {
-    background-color: var(--primary-white);
-    color: var(--primary-blue);
-    text-decoration: none;
-  }
-  
-  .tech-image {
-    height: 170px;
-    width: 100%;
-    margin: 20px 0;
-  }
-  
-  .tech-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-  }
-  
-  .tech-container p {
-    margin: 0 20px;
-  }
+.tech-container h3 {
+  margin: 0;
+}
 
- 
-  
+.tech-container ul {
+  padding: 0;
+  text-align: center;
+}
+
+.tech-container li {
+  text-align: center;
+  margin: 10px;
+}
+
+.tech-container .circle-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-gray);
+  background-color: transparent;
+  color: var(--primary-white);
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tech-container .circle-number.active {
+  background-color: var(--primary-white);
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+ .tech-container img {
+  width: 100vw;
+  height: 170px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.tech-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.tech-container p {
+  margin: 0 20px;
+}

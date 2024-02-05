@@ -39,7 +39,8 @@ const Crew = ({ crew }) => {
         </span>
       </div>
       <div className="crew-image">
-        <img src={images.png} alt={name} />
+      <img width={"170px"} height={"auto"} src={new URL(images.png, import.meta.url).href} alt={name} />
+
       </div>
       <div>
         <ul>

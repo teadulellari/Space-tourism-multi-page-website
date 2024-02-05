@@ -55,9 +55,9 @@
 }
 
 .crew-image {
-  width: 177.12px;
-  height: 222px;
+  width: 90%;
   margin: 20px 0;
+  border-bottom: 1px solid var(--secondary-gray);
 
 }
 .member-data {
@@ -65,4 +65,5 @@
   flex-direction: column;
   justify-content: center;
   margin: 20px;
+ 
 }

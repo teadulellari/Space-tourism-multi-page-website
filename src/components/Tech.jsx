@@ -37,8 +37,8 @@ const Tech = ({ tech }) => {
           <span className="bold-number">03 </span>Space Launch 101
         </span>
       </div>
-      <div className="tech-image">
-        <img src={images.portrait} alt="space-image" />
+      <div>
+      <img  src={new URL(images.portrait, import.meta.url).href} alt={name} />
       </div>
       <div>
         <ul>
