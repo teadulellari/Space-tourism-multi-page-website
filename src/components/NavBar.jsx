@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import "../styling/navBar.css";
 import HamburgerIcon from "../assets/shared/icon-hamburger.svg";
 import CloseIcon from "../assets/shared/icon-close.svg";
@@ -6,9 +7,15 @@ import Logo from "../assets/shared/logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (itemName) => {
+    setIsOpen(false);
+    setActiveItem(itemName);
   };
 
   return (
@@ -29,10 +36,47 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
           <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
-            <li><a href="/" className="nav-link"><span className="bold-number">00</span> HOME</a></li>
-            <li><a href="/destinations" className="nav-link"><span className="bold-number">01</span> DESTINATION</a></li>
-            <li><a href="/crew" className="nav-link"><span className="bold-number">02</span> CREW</a></li>
-            <li><a href="/tech" className="nav-link"><span className="bold-number">03</span> TECHNOLOGY</a></li>
+            <li>
+              <NavLink
+                exact
+                to="/"
+                className="nav-link"
+                activeClassName="active"
+                onClick={() => handleItemClick('home')}
+              >
+                <span className="bold-number">00</span> HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/destinations"
+                className="nav-link"
+                activeClassName="active"
+                onClick={() => handleItemClick('destinations')}
+              >
+                <span className="bold-number">01</span> DESTINATION
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/crew"
+                className="nav-link"
+                activeClassName="active"
+                onClick={() => handleItemClick('crew')}
+              >
+                <span className="bold-number">02</span> CREW
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/tech"
+                className="nav-link"
+                activeClassName="active"
+                onClick={() => handleItemClick('tech')}
+              >
+                <span className="bold-number">03</span> TECHNOLOGY
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>
