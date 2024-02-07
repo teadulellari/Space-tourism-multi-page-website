@@ -42,6 +42,7 @@ const Crew = ({ crew }) => {
       <img width={"170px"} height={"auto"} src={new URL(images.png, import.meta.url).href} alt={name} />
 
       </div>
+      <div className="full-data">
       <div>
         <ul>
           {crew.map((member) => (
@@ -66,6 +67,7 @@ const Crew = ({ crew }) => {
       </div>
       <div>
         <p>{bio}</p>
+      </div>
       </div>
     </div>
   );

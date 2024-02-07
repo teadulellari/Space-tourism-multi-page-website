@@ -58,12 +58,14 @@ const Tech = ({ tech }) => {
           ))}
         </ul>
       </div>
+      <div className="tech-full-data">
       <div className="tech-data">
         <h3>The Technology...</h3>
         <h1>{name}</h1>
       </div>
       <div>
         <p>{description}</p>
+      </div>
       </div>
     </div>
   );

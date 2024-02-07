@@ -11,6 +11,20 @@
     margin: 20px 0px;
     padding: 0px 20px;
 }
+.crew-container .title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.crew-container .bold-number {
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: contents;
+}
+
 .dot, .empty-dot {
     width: 10px;
     height: 10px;
@@ -47,6 +61,7 @@
 .crew-container ul {
  padding: 0;
  text-align: center;
+ justify-content: center;
  
 }
 .crew-container li {
@@ -60,6 +75,13 @@
   border-bottom: 1px solid var(--secondary-gray);
 
 }
+.full-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+
+}
 .member-data {
   display: flex;
   flex-direction: column;
@@ -67,3 +89,74 @@
   margin: 20px;
  
 }
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+  .crew-container {
+    justify-content: space-between;
+    height: calc(100vh - 96px);
+  }
+
+  .title {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    align-self: flex-start; 
+    margin-top: 20px; 
+    order: -1; 
+  }
+
+  .crew-container .full-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .crew-container ul {
+    order: 3; 
+  }
+
+  .crew-container .full-data > div:first-child {
+    order: 4; 
+  }
+
+  .crew-container .dot {
+    order: 5; 
+  }
+  
+  .full-data {
+    order: -1; 
+    width: 458px;
+  }
+
+  .crew-image {
+    width: 80%; 
+    margin-top: 20px; 
+    border-bottom: none;
+  }
+
+  .member-data {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .crew-container h1 {
+    font-size: 40px;
+    line-height: auto;
+    margin-top: 10px;
+  } 
+
+  .crew-container h2 {
+    font-size: 24px;
+    line-height: auto;
+  }
+
+  .crew-container p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .crew-container img {
+    width: 456.37px;
+  }
+}
+

@@ -22,6 +22,7 @@ const Navbar = () => {
     <>
       <nav className={isOpen ? 'show' : ''}>
         <img className="logo" src={Logo} alt="logo" />
+        <hr/>
         <img
           className={`hamburger-icon ${isOpen ? 'hide' : ''}`}
           src={HamburgerIcon}

@@ -63,7 +63,7 @@ ul {
   font-size: 56px;
   margin: 0;
 }
-hr {
+.dest-container hr {
   border: 0.5px solid var(--secondary-color);
   width: 90%;
   margin: 20px 0;
