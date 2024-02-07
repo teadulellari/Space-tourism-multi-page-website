@@ -1,90 +1,130 @@
 :root {
-    --secondary-color : #616476;
-    --primary-color: #FFFFFF;
-    --primary-purple: #D0D6F9;
+  --secondary-color: #616476;
+  --primary-color: #ffffff;
+  --primary-purple: #d0d6f9;
 }
-
 
 .dest-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
-.title {
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 2.7px;
-    text-transform: uppercase;
+.dest-container .title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
 }
-.bold-number {
-    color: var(--secondary-color);
-    font-weight: bold;
+.dest-container .bold-number {
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: contents;
 }
- ul {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Barlow Condensed', sans-serif;
-    width: 100%;
-    letter-spacing: 2.36px;
-    font-weight: normal;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+ul {
+  display: flex;
+  flex-direction: row;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 100%;
+  letter-spacing: 2.36px;
+  font-weight: normal;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 .dest-container li {
-    padding: 10px;
-    margin: 0;
-    
+  padding: 10px;
+  margin: 0;
 }
 
 .dest-container a {
-    text-decoration: none;
-    color: var(--primary-white);
+  text-decoration: none;
+  color: var(--primary-white);
 }
 .dest-container a.active {
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 4px;
-  }
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 4px;
+}
 .moon-image {
-    width: 170px;
-    height: 170px;
-    margin: 40px 0;
-
+  width: 170px;
+  height: 170px;
+  margin: 40px 0;
 }
 .dest-container h1 {
-    font-size: 56px;
-    margin: 0;
+  font-size: 56px;
+  margin: 0;
 }
 hr {
-    border: 0.5px solid  var(--secondary-color);
-    width: 90%;
-    margin: 20px 0;
+  border: 0.5px solid var(--secondary-color);
+  width: 90%;
+  margin: 20px 0;
 }
 .dest-container h2 {
-    font-family: 'Bellefair', serif;
-    font-size: 28px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-top: 0;
-    
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  margin-top: 0;
 }
-.dest-container h3{
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2.36px;
-    color:var(--primary-purple) ;
-    font-weight: normal;
-    text-transform: uppercase;
-    
+.dest-container h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: var(--primary-purple);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.dest-data {
+  margin: 10px;
+}
+/* tablet view  */
+@media screen and (min-width: 768px) {
+  .dest-container {
+    height: calc(100vh - 96px);
+    margin: 0;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  .dest-container .title {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    align-self: start;
+  }
+  .dest-container img {
+    width: 300px;
+    height: 300px;
+  }
+  .moon-image {
+    width: 300px;
+    height: 300px;
+    margin: 40px 0;
+  }
+  ul {
+    letter-spacing: 2.7px;
+    font-size: 16px;
+  }
+  .dest-container h1 {
+    font-size: 80px;
+    margin: 0;
+  }
+  .dest-container p {
+    width: 573px;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .dest-data {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
 }

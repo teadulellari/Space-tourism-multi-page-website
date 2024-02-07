@@ -61,6 +61,7 @@ const Destinations = ({ destinations }) => {
         <p>{description}</p>
       </div>
       <hr />
+      <div className="dest-data">
       <div>
         <h3>Avg. Distance</h3>
         <h2>{distance}</h2>
@@ -68,6 +69,7 @@ const Destinations = ({ destinations }) => {
       <div>
         <h3>EST Travel Time</h3>
         <h2>{travel}</h2>
+      </div>
       </div>
     </div>
     </div>

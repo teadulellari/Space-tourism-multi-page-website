@@ -1,6 +1,6 @@
 
 .home-main-container{
-    height: 100%;
+    height: calc(100vh - 96px);
 }
   
   .home-container{
