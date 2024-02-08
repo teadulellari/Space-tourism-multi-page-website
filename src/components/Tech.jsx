@@ -24,11 +24,11 @@ const Tech = ({ tech }) => {
     const { name, images, description } = selectedTech;
 
     useEffect(() => {
-        document.documentElement.style.setProperty(
-          '--bodyImg',
-          `url("${bg}") center/cover no-repeat`
-        );
-      }, [images.bg]);
+      document.body.style.setProperty(
+        'background',
+        'var(--techImg)'
+      );
+    }, []);
 
   return (
     <div className="tech-container">

@@ -8,7 +8,7 @@
   --font-m: 56px;
   --font-s: 32px;
   --font-xs: 28px;
-  --bg-img: url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+  --bodyImg: url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
 }
 
 html, body, #root {
@@ -20,7 +20,7 @@ html, body, #root {
 body {
   width: 100%;
   min-height: 100vh;
-  background: var(--bodyImg, var(--bg-img));
+  background: var(--bodyImg);
   text-align: center;
 }
 

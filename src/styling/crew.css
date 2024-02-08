@@ -1,4 +1,8 @@
+:root{
+  --crewImg : url("../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
+}
 .crew-container {
+  height: 100vh;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -11,6 +15,7 @@
     margin: 20px 0px;
     padding: 0px 20px;
 }
+
 .crew-container .title {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
@@ -92,6 +97,9 @@
 
 /* Tablet and larger screens */
 @media screen and (min-width: 768px) {
+  :root{
+    --crewImg : url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+  }
   .crew-container {
     justify-content: space-between;
     height: calc(100vh - 96px);
@@ -159,4 +167,7 @@
     width: 456.37px;
   }
 }
+/* :root{
+  --crewImg : url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+} */
 

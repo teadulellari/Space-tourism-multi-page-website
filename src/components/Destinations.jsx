@@ -25,11 +25,11 @@ const Destinations = ({ destinations }) => {
   const { name, images, description, distance, travel } = selectedDestination;
 
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      '--bodyImg',
-      `url("${bg}") center/cover no-repeat`
+    document.body.style.setProperty(
+      'background',
+      'var(--destImg)'
     );
-  }, [images.bg]);
+  }, []);
 
   return (
     <div className="dest-wrapper">
@@ -42,6 +42,7 @@ const Destinations = ({ destinations }) => {
       <div className="moon-image">
         <img width={"170px"} height={"170px"} src={new URL(images.png, import.meta.url).href} alt={name} />
       </div>
+      <div className="dest-full-data">
       <div>
         <ul>
           {destinations.map((dest) => (
@@ -69,6 +70,7 @@ const Destinations = ({ destinations }) => {
       <div>
         <h3>EST Travel Time</h3>
         <h2>{travel}</h2>
+      </div>
       </div>
       </div>
     </div>

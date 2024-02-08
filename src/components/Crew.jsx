@@ -4,6 +4,7 @@ import "../styling/crew.css";
 import "../styling/global.css";
 import bg from "../assets/crew/background-crew-mobile.jpg"
 
+
 const Crew = ({ crew }) => {
   const { name: selectedCrewName } = useParams();
   const selectedCrewNameFormatted = selectedCrewName ? selectedCrewName.replace(/-/g, ' ') : "";
@@ -25,11 +26,11 @@ const Crew = ({ crew }) => {
   const { name, images, role, bio } = selectedMember;
   
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      '--bodyImg',
-      `url("${bg}") center/cover no-repeat`
+    document.body.style.setProperty(
+      'background',
+      'var(--crewImg)'
     );
-  }, [images.bg]);
+  }, []);
 
   return (
     <div className="crew-container">

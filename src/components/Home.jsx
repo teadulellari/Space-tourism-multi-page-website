@@ -1,9 +1,17 @@
-import NavBar from "./NavBar";
 import "../styling/global.css";
 import "../styling/home.css"
+import { useEffect } from "react";
+
 const Home = () => {
+  useEffect(() => {
+    document.body.style.setProperty(
+      'background',
+      'var(--homeImg)'
+    );
+  }, []);
+
     return (
-      <div className="home-main-container">
+    
      
       <div className="home-container">
         
@@ -21,7 +29,7 @@ const Home = () => {
         <button className="circle-button">Explore</button>
         </div>
       </div>
-      </div>
+      
     );
   };
   
