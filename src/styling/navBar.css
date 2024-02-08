@@ -135,6 +135,7 @@ nav.show .bold-number {
     display: flex;
     flex-direction: row;
     width: 60%;
+    justify-self: stretch;
   }
 
   .nav-list li.active {
@@ -155,6 +156,7 @@ nav.show .bold-number {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     width: 60%;
     background-color: var(--primary-blue);
     padding: 0 40px ;

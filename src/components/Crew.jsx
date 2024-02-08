@@ -44,7 +44,8 @@ const Crew = ({ crew }) => {
 
       </div>
       <div className="full-data">
-      <div>
+     
+     
         <ul>
           {crew.map((member) => (
             <li key={member.name}>
@@ -61,7 +62,7 @@ const Crew = ({ crew }) => {
             </li>
           ))}
         </ul>
-      </div>
+     
       <div className="member-data">
         <h2>{role}</h2>
         <h1>{name}</h1>

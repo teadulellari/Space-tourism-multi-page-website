@@ -64,9 +64,11 @@
 }
 
 .crew-container ul {
- padding: 0;
- text-align: center;
- justify-content: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
  
 }
 .crew-container li {
@@ -105,7 +107,7 @@
     height: calc(100vh - 96px);
   }
 
-  .title {
+  .crew-container .title {
     font-size: 20px;
     letter-spacing: 3.38px;
     align-self: flex-start; 
@@ -167,7 +169,72 @@
     width: 456.37px;
   }
 }
-/* :root{
-  --crewImg : url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
-} */
 
+@media screen and (min-width: 1024px) {
+  .crew-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: start;
+    margin: 0;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .crew-container .title {
+    font-size: 28px;
+    letter-spacing: 4.72px;
+  
+    align-self: center;
+    padding-left: 40px;
+  }
+
+  .crew-container .crew-image {
+    grid-row: 1 / span 2; 
+    grid-column: 2; 
+    align-self: center;
+    justify-self: center;
+    width: 568px;
+    height: 712px;
+  }
+
+  .crew-container img {
+   width: 568px;
+    height: 712px;
+  }
+  .crew-container .full-data {
+   justify-self: self-start;
+   align-self: flex-start;
+   text-align: left;
+   width: auto;
+  }
+  .crew-container h1 {
+    font-size: 56px;
+    margin: 0;
+    text-align: left;
+    padding-top: 10px;
+  } 
+
+  .crew-container h2 {
+    font-size: 32px;
+    line-height: auto;
+  }
+
+  .crew-container p {
+    line-height: 32px;
+    font-size: 18px;
+    text-align: start;
+    word-spacing: 1px;
+    padding: 10px  0 60px 0;
+   
+  }
+  .crew-container ul {
+    padding: 0;
+    align-items: start;
+    justify-content: flex-start;
+    margin: 0;
+    width: -webkit-fill-available;
+    
+   }
+}
