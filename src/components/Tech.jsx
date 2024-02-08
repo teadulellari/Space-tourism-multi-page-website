@@ -37,10 +37,10 @@ const Tech = ({ tech }) => {
           <span className="bold-number">03 </span>Space Launch 101
         </span>
       </div>
-      <div>
+      <div className="tech-image">
       <img  src={new URL(images.portrait, import.meta.url).href} alt={name} />
       </div>
-      <div>
+      <div className="full-info">
         <ul>
           {tech.map((technology, index) => (
             <li key={technology.name}>
@@ -57,7 +57,7 @@ const Tech = ({ tech }) => {
             </li>
           ))}
         </ul>
-      </div>
+      
       <div className="tech-full-data">
       <div className="tech-data">
         <h3>The Technology...</h3>
@@ -65,6 +65,7 @@ const Tech = ({ tech }) => {
       </div>
       <div>
         <p>{description}</p>
+      </div>
       </div>
       </div>
     </div>
