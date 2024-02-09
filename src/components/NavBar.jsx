@@ -42,7 +42,7 @@ const Navbar = () => {
                 exact
                 to="/"
                 className="nav-link"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={() => handleItemClick('home')}
               >
                 <span className="bold-number">00</span> HOME
@@ -52,7 +52,7 @@ const Navbar = () => {
               <NavLink
                 to="/destinations"
                 className="nav-link"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={() => handleItemClick('destinations')}
               >
                 <span className="bold-number">01</span> DESTINATION
@@ -62,7 +62,7 @@ const Navbar = () => {
               <NavLink
                 to="/crew"
                 className="nav-link"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={() => handleItemClick('crew')}
               >
                 <span className="bold-number">02</span> CREW
@@ -72,7 +72,7 @@ const Navbar = () => {
               <NavLink
                 to="/tech"
                 className="nav-link"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={() => handleItemClick('tech')}
               >
                 <span className="bold-number">03</span> TECHNOLOGY

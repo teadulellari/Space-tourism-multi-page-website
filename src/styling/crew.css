@@ -2,7 +2,7 @@
   --crewImg : url("../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
 }
 .crew-container {
-  height: 100vh;
+ 
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -11,7 +11,6 @@
     text-align: center;
     padding: 0;
     align-items: center;
-    justify-content: center;
     margin: 20px 0px;
     padding: 0px 20px;
 }
@@ -103,7 +102,7 @@
     --crewImg : url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
   }
   .crew-container {
-    justify-content: space-between;
+  
     height: calc(100vh - 96px);
   }
 
@@ -167,11 +166,26 @@
 
   .crew-container img {
     width: 456.37px;
+    height: fit-content;
   }
+  .crew-container img {
+    width: 456.37px;
+    height: fit-content;
+  }
+  .crew-container .crew-image {
+    width: 80%; 
+    margin-top: 20px; 
+    border-bottom: none;
+  }
+  
 }
 
 @media screen and (min-width: 1024px) {
+  :root {
+    --techImg: url("../assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
+  }
   .crew-container {
+
     display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr 1fr;
@@ -195,12 +209,12 @@
     grid-column: 2; 
     align-self: center;
     justify-self: center;
-    width: 568px;
+    width: inherit;
     height: 712px;
   }
 
   .crew-container img {
-   width: 568px;
+   max-width: 568px;
     height: 712px;
   }
   .crew-container .full-data {
