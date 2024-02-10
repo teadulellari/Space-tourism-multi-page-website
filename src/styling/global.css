@@ -1,17 +1,20 @@
 :root {
-  --primary-blue: #0B0D17;
-  --primary-purple: #D0D6F9;
-  --primary-white: #FFFFFF;
+  --primary-blue: #0b0d17;
+  --primary-purple: #d0d6f9;
+  --primary-white: #ffffff;
   --secondary-gray: #979797;
   --font-xl: 150px;
   --font-l: 100px;
   --font-m: 56px;
   --font-s: 32px;
   --font-xs: 28px;
-  --bodyImg: url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+  --bodyImg: url("../assets/home/background-home-mobile.jpg") center/cover
+    no-repeat;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -25,7 +28,7 @@ body {
 }
 
 h1 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   color: var(--primary-white);
   font-size: 80px;
   margin: 10px 0;
@@ -36,7 +39,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
   letter-spacing: 2.36px;
   color: var(--primary-purple);
@@ -45,7 +48,7 @@ h3 {
 }
 
 p {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   color: var(--primary-purple);
   font-size: 15px;
   line-height: 25px;

@@ -1,9 +1,7 @@
-import React, {useEffect} from "react";
+import  {useEffect} from "react";
 import { useParams, NavLink} from "react-router-dom";
 import "../styling/crew.css";
 import "../styling/global.css";
-import bg from "../assets/crew/background-crew-mobile.jpg"
-
 
 const Crew = ({ crew }) => {
   const { name: selectedCrewName } = useParams();

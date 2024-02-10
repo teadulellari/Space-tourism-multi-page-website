@@ -1,96 +1,68 @@
-
-
-:root{
-  --homeImg : url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+:root {
+  --homeImg: url("../assets/home/background-home-mobile.jpg") center/cover
+    no-repeat;
 }
-  
-  .home-container{
-    height: calc(100vh - 96px);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
-  
-  .container-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-  }
 
+.home-container {
+  height: calc(100vh - 96px);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
 
-  
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
 
-  
-  .container-1 h2 {
-    font-family: 'Barlow Condensed', sans-serif;
-    letter-spacing: 2.7px;
-    color: var(--primary-purple);
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: normal;
-    text-align: center;
-  }
-  
- 
-  
-  .container-2 {
-    margin-top: 50px;
-  }
-  
-  .circle-button {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--primary-white);
-    color: var(--primary-blue);
-    border: none;
-    cursor: pointer;
-    font-family: 'Bellefair', serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1.25px;
-    font-weight: normal;
-    padding: 5px;
-    /* transition: all 0.3s ease-in-out; */
-  }
-  
-  /* .circle-button:before {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #24262F;
-    border: 2px solid;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: -1; 
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .circle-button:hover:before {
-    opacity: 1; /* Makes the larger circle visible on hover */
-    
-  /* } */
-  /* Tablet and larger screens */
+.container-1 h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  color: var(--primary-purple);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.container-2 {
+  margin-top: 50px;
+}
+
+.circle-button {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-white);
+  color: var(--primary-blue);
+  border: none;
+  cursor: pointer;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  font-weight: normal;
+  padding: 5px;
+}
+
+/* Tablet and larger screens */
 @media screen and (min-width: 768px) {
-  :root{
-    --homeImg : url("../assets/home/background-home-tablet.jpg") center/cover no-repeat;
+  :root {
+    --homeImg: url("../assets/home/background-home-tablet.jpg") center/cover
+      no-repeat;
   }
 
-  .home-container{
+  .home-container {
     margin: 40px 0;
     justify-content: space-around;
   }
   .container-1 {
     box-sizing: border-box;
-    
   }
 
   .container-1 h2 {
@@ -108,18 +80,17 @@
     width: 450px;
   }
   .circle-button {
-   
     width: 242px;
     height: 242px;
-    
   }
 }
 @media screen and (min-width: 1024px) {
-  :root{
-    --homeImg : url("../assets/home/background-home-desktop.jpg") center/cover no-repeat;
+  :root {
+    --homeImg: url("../assets/home/background-home-desktop.jpg") center/cover
+      no-repeat;
   }
 
-  .home-container{
+  .home-container {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -146,34 +117,32 @@
     height: 274px;
     font-size: 32px;
     letter-spacing: 2px;
-    
+
     transition: all 0.3s ease-in-out;
   }
-  
+
   .circle-button:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-color: #24262F;
+    background-color: #24262f;
     border: 2px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    z-index: -1; 
+    z-index: -1;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .circle-button:hover:before {
     opacity: 1; /* Makes the larger circle visible on hover */
-    
- }
- .container-1 {
-  justify-content: space-around;
-  padding: 30px;
-  gap: 20px;
+  }
+  .container-1 {
+    justify-content: space-around;
+    padding: 30px;
+    gap: 20px;
+  }
 }
-
-}  

@@ -1,18 +1,18 @@
-:root{
-  --crewImg : url("../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
+:root {
+  --crewImg: url("../assets/crew/background-crew-mobile.jpg") center/cover
+    no-repeat;
 }
 .crew-container {
- 
   width: 100%;
   box-sizing: border-box;
   display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    padding: 0;
-    align-items: center;
-    margin: 20px 0px;
-    padding: 0px 20px;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 0;
+  align-items: center;
+  margin: 20px 0px;
+  padding: 0px 20px;
 }
 
 .crew-container .title {
@@ -29,32 +29,31 @@
   display: contents;
 }
 
-.dot, .empty-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    color: var(--primary-white);
+.dot,
+.empty-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: var(--primary-white);
 }
 
 .dot {
   background-color: var(--primary-white);
-   
 }
-  
-  
+
 .empty-dot {
-    background-color: var(--secondary-gray) ;
- }
+  background-color: var(--secondary-gray);
+}
 
 .crew-container h1 {
   font-size: 24px;
   font-weight: normal;
   margin: 0;
- line-height: normal;
- margin-top: 10px;
-} 
-.crew-container h2{
-  font-family: 'Bellefair', serif;
+  line-height: normal;
+  margin-top: 10px;
+}
+.crew-container h2 {
+  font-family: "Bellefair", serif;
   color: var(--secondary-gray);
   font-size: 16px;
   font-weight: normal;
@@ -68,7 +67,6 @@
   text-align: center;
   justify-content: center;
   padding: 0;
- 
 }
 .crew-container li {
   text-align: center;
@@ -79,80 +77,77 @@
   width: 90%;
   margin: 20px 0;
   border-bottom: 1px solid var(--secondary-gray);
-
 }
-.full-data{
+.full-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px;
-
 }
 .member-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 20px;
- 
 }
 
 /* Tablet and larger screens */
 @media screen and (min-width: 768px) {
-  :root{
-    --crewImg : url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+  :root {
+    --crewImg: url("../assets/crew/background-crew-tablet.jpg") center/cover
+      no-repeat;
   }
   .crew-container {
-  
     height: calc(100vh - 96px);
   }
 
   .crew-container .title {
     font-size: 20px;
     letter-spacing: 3.38px;
-    align-self: flex-start; 
-    margin-top: 20px; 
-    order: -1; 
+    align-self: flex-start;
+    margin-top: 20px;
+    order: -1;
   }
 
   .crew-container .full-data {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .crew-container ul {
-    order: 3; 
+    order: 3;
   }
 
   .crew-container .full-data > div:first-child {
-    order: 4; 
+    order: 4;
   }
 
   .crew-container .dot {
-    order: 5; 
+    order: 5;
   }
-  
+
   .full-data {
-    order: -1; 
+    order: -1;
     width: 458px;
   }
 
   .crew-image {
-    width: 80%; 
-    margin-top: 20px; 
+    width: 80%;
+    margin-top: 20px;
     border-bottom: none;
   }
 
   .member-data {
-    width: 100%; 
-    margin-bottom: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .crew-container h1 {
     font-size: 40px;
     line-height: auto;
     margin-top: 10px;
-  } 
+  }
 
   .crew-container h2 {
     font-size: 24px;
@@ -173,19 +168,18 @@
     height: fit-content;
   }
   .crew-container .crew-image {
-    width: 80%; 
-    margin-top: 20px; 
+    width: 80%;
+    margin-top: 20px;
     border-bottom: none;
   }
-  
 }
 
 @media screen and (min-width: 1024px) {
   :root {
-    --techImg: url("../assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
+    --techImg: url("../assets/crew/background-crew-desktop.jpg") center/cover
+      no-repeat;
   }
   .crew-container {
-
     display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 1fr 1fr;
@@ -199,14 +193,14 @@
   .crew-container .title {
     font-size: 28px;
     letter-spacing: 4.72px;
-  
+
     align-self: center;
     padding-left: 40px;
   }
 
   .crew-container .crew-image {
-    grid-row: 1 / span 2; 
-    grid-column: 2; 
+    grid-row: 1 / span 2;
+    grid-column: 2;
     align-self: center;
     justify-self: center;
     width: inherit;
@@ -214,21 +208,21 @@
   }
 
   .crew-container img {
-   max-width: 568px;
+    max-width: 568px;
     height: 712px;
   }
   .crew-container .full-data {
-   justify-self: self-start;
-   align-self: flex-start;
-   text-align: left;
-   width: auto;
+    justify-self: self-start;
+    align-self: flex-start;
+    text-align: left;
+    width: auto;
   }
   .crew-container h1 {
     font-size: 56px;
     margin: 0;
     text-align: left;
     padding-top: 10px;
-  } 
+  }
 
   .crew-container h2 {
     font-size: 32px;
@@ -240,8 +234,7 @@
     font-size: 18px;
     text-align: start;
     word-spacing: 1px;
-    padding: 10px  0 60px 0;
-   
+    padding: 10px 0 60px 0;
   }
   .crew-container ul {
     padding: 0;
@@ -249,6 +242,5 @@
     justify-content: flex-start;
     margin: 0;
     width: -webkit-fill-available;
-    
-   }
+  }
 }

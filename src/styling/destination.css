@@ -2,12 +2,11 @@
   --secondary-color: #616476;
   --primary-color: #ffffff;
   --primary-purple: #d0d6f9;
-  --destImg : url("../assets/destination/background-destination-mobile.jpg") center/cover no-repeat;
+  --destImg: url("../assets/destination/background-destination-mobile.jpg")
+    center/cover no-repeat;
 }
 
-
 .dest-container {
-
   display: flex;
   flex-direction: column;
   color: white;
@@ -91,8 +90,9 @@
 }
 /* tablet view  */
 @media screen and (min-width: 768px) {
-  :root{
-    --destImg : url("../assets/destination/background-destination-tablet.jpg") center/cover no-repeat;
+  :root {
+    --destImg: url("../assets/destination/background-destination-tablet.jpg")
+      center/cover no-repeat;
   }
 
   .dest-container {
@@ -135,8 +135,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  :root{
-    --destImg : url("../assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
+  :root {
+    --destImg: url("../assets/destination/background-destination-desktop.jpg")
+      center/cover no-repeat;
   }
   .dest-container {
     display: grid;
@@ -153,11 +154,11 @@
     align-items: center;
     justify-self: center;
     width: 445px;
-    height: 445px;;
+    height: 445px;
   }
   .dest-container img {
     width: 445px;
-    height: 445px;;
+    height: 445px;
   }
 
   .dest-full-data {
@@ -170,11 +171,10 @@
   }
   .dest-container .title {
     font-size: 28px;
-    letter-spacing: 4,72px;
+    letter-spacing: 4, 72px;
     justify-self: center;
     align-self: center;
     padding-left: 40px;
-
   }
   .dest-container h1 {
     font-size: 100px;

@@ -1,8 +1,7 @@
-import React, {useEffect} from "react";
+import  {useEffect} from "react";
 import { useParams, NavLink } from "react-router-dom";
 import "../styling/destination.css";
 import "../styling/global.css";
-import bg from "../assets/destination/background-destination-mobile.jpg"
 
 const Destinations = ({ destinations }) => {
   const { destination } = useParams();
